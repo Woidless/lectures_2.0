@@ -84,7 +84,3 @@
 # print(type(num))
 # type - функция для вывода типа переданных данных
 # id
-a=10
-b=10
-print(id(a))
-print(id(b))
