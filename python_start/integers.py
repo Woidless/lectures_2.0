@@ -10,11 +10,11 @@
 # num1 // num2 # - деление -> int()
 # num1 % num2 # - деление -> int()
 
-from decimal import Decimal
-import imp
-dec1 = Decimal('0.1')
-dec2 = Decimal('0.1')
-dec3 = Decimal('0.1')
+# from decimal import Decimal
+# import imp
+# dec1 = Decimal('0.1')
+# dec2 = Decimal('0.1')
+# dec3 = Decimal('0.1')
 # print(dec1 + dec2 + dec3)
 
 """ Функции """
@@ -28,6 +28,10 @@ dec3 = Decimal('0.1')
 # math.sqrt(25) # 5
 # math.factorial(5) # 120
 # print(math.pi)
-num1 = float(input('Введите первое число: '))
-num2 = float(input('Введите второе число: '))
-print('Результат: ', num1 + num2)
+# num1 = float(input('Введите первое число: '))
+# num2 = float(input('Введите второе число: '))
+# print('Результат: ', num1 + num2)
+
+"""Инкременты и декременты"""
+x = 5
+x +=1
