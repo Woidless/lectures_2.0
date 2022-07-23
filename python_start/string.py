@@ -39,9 +39,77 @@
 # print(str7.find('ood')) # поиск индекса подстроки в строке
 # print(str7.index('mor')) # поиск индекса подстроки в строке
 # print('*'.join(['ola','kepasso'])) -  соединяет переданный список строк по указанной строке
-str8 = '   my name is   '
+
+
+
+
+# str8 = '   my name is   '
 # print(str8)
 # print(str8.strip()) - убирает указанный символ в строке с двух сторон (по умолчанию - пробел)
 # print(str8.lstrip) - убирает пробелы слева
 # print(str8.rstrip) - убирает пробелы справа
-print(str8)
+# print(str8)
+# ''' Методы проверки '''
+# string = 'My test string 123'
+# print(string.isdigit())
+# print(string.isalpha())
+# print(string.isalnum())
+# print(string.isspace())
+# print(string.islower())
+# print(string.isupper())
+# print(string.endswith('123'))
+# print(string.startswith('My'))
+
+
+# num1 = 10
+# num2 = 20
+# str1 = 'apple'
+# str2 = 'hello'
+# print(str1 > str2)
+# ord('a')
+# chr(97)
+# # ASCII
+# a = 'jsbdjsbd'
+# b = 'nsdns'
+# print(sorted(a))
+# print(sorted(b))
+
+''' Форматирование/интерполяция строк '''
+# stat = 'привет, Фархат! Приглашаю тебя на праздник'
+
+# name = 'Bilal'
+# place = 'ChaiHana'
+# # %
+# str5 = 'Привет, %s! Приглашаю тебя на праздник' % name
+# print(str5)
+# # format
+# str6 = 'Привет, {}'.format(name)
+# print(str6)
+# str7 = f'Привет, {name}! Приглашаю тебя в {place}'
+# print(str7)
+# Форматирование строк - подстановка переменных в строку, созданние динамической строки
+# a = 'I\'m student'
+# b = 'Идет бычек качается,\n\tВздыхает на ходу'
+# print(b)
+# # \n - newline 
+# # \t - tabular
+# str8 = r'This is a test string\n\t\n'
+# print(str8)
+# # r - raw
+# windows_path = 'User\Doc\\new_folder'
+# print(windows_path)
+
+''' Оператор in '''
+# string = 'Hello world'
+# string2 = 'ell'
+# print(string2 in string)
+
+# str1 = 'hello'
+''' помощник для каждого типа данных '''
+# dir(object)
+# print(dir(12))
+name = input('Name ')
+last_name = input('Last_name ')
+age = int(input('age '))
+city = input('City ')
+print(f'Привет {name} {last_name}, вам {age} лет, вы живете в {city}')
