@@ -113,10 +113,10 @@
 # age = int(input('age '))
 # city = input('City ')
 # print(f'Привет {name} {last_name}, вам {age} лет, вы живете в {city}')
-x = int(input())
-y = int(input())
-if x / y > x // y:
-    print(f'x не делится на y\nЧастное: {x // y}\nОстаток: {x % y}')
-else:
-    print(f'x делится на y\nЧастное: {x // y}')
-print((1, 2, 3)< (1,2,4))
+# x = int(input())
+# y = int(input())
+# if x / y > x // y:
+#     print(f'x не делится на y\nЧастное: {x // y}\nОстаток: {x % y}')
+# else:
+#     print(f'x делится на y\nЧастное: {x // y}')
+# print((1, 2, 3)< (1,2,4))

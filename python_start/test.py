@@ -176,14 +176,15 @@
 #     fullset.add(i)
 # for i in set2:
 #     fullset.add(i)
-set1 = {i for i in range(10)}
-set2 = {i for i in range(8, 18)}
-full_set = (set1 | set2)
-if len(full_set) == 20:
-    print('Ваш объединенный сет полностью уникальный!')
-else:
-    print(f'В этом сете было {(len(set1)+len(set2))-len(full_set)} повторения, его длина составляет {len(full_set)}')
 
-print(set1)
-print(set2)
-print(full_set)
+# set1 = {i for i in range(10)}
+# set2 = {i for i in range(8, 18)}
+# full_set = (set1 | set2)
+# if len(full_set) == 20:
+#     print('Ваш объединенный сет полностью уникальный!')
+# else:
+#     print(f'В этом сете было {(len(set1)+len(set2))-len(full_set)} повторения, его длина составляет {len(full_set)}')
+
+# print(set1)
+# print(set2)
+# print(full_set)
