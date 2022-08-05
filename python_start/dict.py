@@ -37,20 +37,21 @@
 
 
 # dict_ = {}
-passport = {
-    'name': 'Bilal',
-    'last_name':'Abd',
-    'age': 19,
-    'gender': 'pokemon',
-    'birthday': '23.02.2003'
-    }
+# passport = {
+#     'name': 'Bilal',
+#     'last_name':'Abd',
+#     'age': 19,
+#     'gender': 'pokemon',
+#     'birthday': '23.02.2003'
+#     }
 
 # print(passport.get('name'))
 # print(passport.get('ida'))
 # dict.get(key, None) - щтдает значение указанного ключа,
 # если нет _ отдает второе указанное значение
 # (по умолчанию)
-print(passport.get('id', 'Нет такого ключа'))
+
+# print(passport.get('id', 'Нет такого ключа'))
 
 # passport.setdefault(key, None) - отдает занчение указанного ключа
 # если его нет - создает со значением dafault(по умолчанию None)
@@ -79,21 +80,21 @@ print(passport.get('id', 'Нет такого ключа'))
 
 
 
-dict10 = {
-    'name': 'Lalib',
-    'last_name':'Abd',
-    'age': 19,
-    'gender': 'pokemon',
-    'birthday': '23.02.2003' 
-    }
-dict10.pop('name')
-print(dict10)
+# dict10 = {
+#     'name': 'Lalib',
+#     'last_name':'Abd',
+#     'age': 19,
+#     'gender': 'pokemon',
+#     'birthday': '23.02.2003' 
+#     }
+# dict10.pop('name')
+# print(dict10)
 
-print(dict10.pop('id', 'Нет такого ключа'))
-print(dict10)
+# print(dict10.pop('id', 'Нет такого ключа'))
+# print(dict10)
 
-it = dict10.items()
-print(it)
+# it = dict10.items()
+# print(it)
 ''' Методы '''
 
 # get(key, None)
@@ -121,3 +122,15 @@ print(it)
 
 # items(), keys(), values()
 
+list_ = ['x--', '--x', '++x', 'x++']
+
+x = 0
+
+for i in list_:
+    if '--' in i:
+        x -= 1
+        print(x)
+    elif '++' in i:
+        x += 1
+        print(x)
+        
