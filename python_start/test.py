@@ -123,16 +123,16 @@
 #     if i % 2 == 0:
 #         my_list.append(i)
 # print(my_list3)
-
+'''  '''
 # # list comprehension
 # my_list4 = [i for i in range(50) if i % 2 == 0]
 # print(my_list4)
-
+'''  '''
 # dictionary comprehension
 # my_dict = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
 # my_dict = {val: key for key, val in my_dict.items()}
 # print(my_dict)
-
+'''  '''
 # list_ = [i**2 if i % 2 == 0 else i for i in range(1, 11)]
 # print(list_)
 
@@ -188,3 +188,35 @@
 # print(set1)
 # print(set2)
 # print(full_set)
+'''  '''
+# def foo():
+#   var = 'переменная foo'
+#   print('переменная в foo: ', var)                
+  
+#   def bar():
+#     global var
+#     var = 'переменная bar'
+ 
+#   bar()
+
+# foo()
+# print('переменная в foo: ', var)
+'''  '''
+# x = 'Я глобальная переменная!'
+# def my_func():
+#     global x
+#     x = 'Я могу измениться'
+# my_func()
+# print(x)
+'''  '''
+# num = 3 
+
+# def mul():
+#   global num
+#   num **= 2
+
+# mul()
+# mul()
+# mul()
+# print(num)
+'''  '''

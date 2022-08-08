@@ -1,6 +1,18 @@
 ''' try-except '''
 
-# IndexError, ValueError, NameError, KeyError, ZeroDivisionError
+# IndexError, ValueError,
+# NameError, KeyError,
+# ZeroDivisionError,
+# AttributeError
+# ImportError
+
+''' неизменяемый ошибка '''
+
+# IdentationError - ошибка отступа
+# TabError - ошибка табуляции
+# SyntaxError - синтаксическая ошибка
+
+
 
 # b = 10
 # c = 11
