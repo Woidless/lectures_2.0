@@ -12,13 +12,16 @@
 
 '''---'''
 
-list_ = ['я любуюсь миром','лежу на боку']
+# list_ = ['я любуюсь миром','лежу на боку']
  
-max_el = ''
-for el in list_:
-    list2 = el.split()
-    for el_inner in list2:
-        if len(max_el) < len(el_inner):
-            max_el = el_inner
+# max_el = ''
+# for el in list_:
+#     list2 = el.split()
+#     for el_inner in list2:
+#         if len(max_el) < len(el_inner):
+#             max_el = el_inner
     
-print(max_el)
+# print(max_el)
+
+'''-------------'''
+

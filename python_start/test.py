@@ -188,7 +188,8 @@
 # print(set1)
 # print(set2)
 # print(full_set)
-'''  '''
+
+''' def '''
 # def foo():
 #   var = 'переменная foo'
 #   print('переменная в foo: ', var)                
@@ -201,14 +202,14 @@
 
 # foo()
 # print('переменная в foo: ', var)
-'''  '''
+''' --- '''
 # x = 'Я глобальная переменная!'
 # def my_func():
 #     global x
 #     x = 'Я могу измениться'
 # my_func()
 # print(x)
-'''  '''
+''' --- '''
 # num = 3 
 
 # def mul():
@@ -219,4 +220,180 @@
 # mul()
 # mul()
 # print(num)
-'''  '''
+''' --- '''
+# balance = 0
+
+# def get_salary(amount):
+#     global balance
+#     balance += amount
+
+# def pay_bills(amount, long_name):
+#     global balance
+#     balance -= amount
+#     print(f'Вы заплатили {amount} сом за {long_name}')
+
+
+# def get_balance():
+#     global balance
+#     print(f'У вас на сету {balance} сом')
+
+# get_salary(1000)
+# get_balance()
+# pay_bills(400, 'кабельное тв')
+# get_balance()
+
+'''--'''
+
+# a = {'Мурат': 24, 'Эржан': 21, 'Чынгыз': 24, 'Алтынай': 17, 'Асема': 16}
+
+# def age_control(dict_):
+#     for key, val in dict_.items():
+#         if val < 17:
+#             print(f'{key}, извините, Вы не можете войти в клуб по age-control')
+#         else:
+#             print(f'{key}, Вы можете войти в клуб')
+
+# age_control(a)
+
+''' -- '''
+
+# a = ['pipi', 'papa', 'mama']
+
+# def list_Upper(list_):
+#     b = [i.title() for i in list_]
+#     return b
+
+# print(list_Upper(a))
+'''---'''
+
+# azb_sogl = 'бвгджзйклмнпрстфхцчшщ'
+# azb_gl = 'ауоыиэяюёе'
+
+# def count_symbols(string):
+#     sogl = 0
+#     gl = 0
+#     dr = 0
+
+#     print(list(string.lower()))
+#     for i in list(string.lower()):
+#         if i in azb_gl:
+#             gl +=1
+#         elif i in azb_sogl:
+#             sogl += 1
+#         else:
+#             dr += 1
+
+#     print(f'Количество гласных: {gl}, согласных {sogl}, остальных символов: {dr}')
+    
+# print(count_symbols('Мурат супер!'))
+
+'''---'''
+
+# a = []
+
+# def a_():
+#     global a
+#     for i in range(11):
+#         a.append(i)
+
+# a_()
+# print(a)
+
+'''reduce'''
+# import functools 
+# list_ = [1, 2, 3, 4]  
+# result = functools.reduce(lambda x, y: x + y, list_) 
+# print(result)
+'''---'''
+# import functools 
+# list_ = [5, 6, 7, 8] 
+# result = functools.reduce(lambda x, y: x * y, list_) 
+# print(result)
+'''---'''
+# import functools 
+# list_ = ['Paul', 'George', 'Ringo', 'John'] 
+# result = functools.reduce(lambda x, y: x if len(x) > len(y) else y, list_) 
+# print(result)
+'''all'''
+# list_ = [12, 3, 1, 23, 1, 2, 233]
+# result = all(i > 3 for i in list_)
+# print(result)
+
+'''any'''
+# list_ = [5, 8, 4, 6, 7]
+# result = any(i < 0 for i in list_)
+# print(result)
+'''map(lambda())'''
+# list_ = [1, 2, 3, 4]  
+# result = list(map(lambda x: x ** 2, list_))
+# print(result)
+'''---'''
+# list_ = [-1, 2, 3, 5, -3, 7] 
+# result = list(map(lambda x: False if x < 0 else True, list_))
+# print(result)
+'''---'''
+# dict_ = {}
+# result = dict(map(lambda x: (x[0], str(x[1])), dict_).items())
+# print(result)
+
+'''filter'''
+# list_ = [1, 2, 3, 4] 
+# result = list(filter(lambda x: x % 2 == 0, list_))
+# print(result)
+'''filter'''
+# list_ = ['inheritance', 'solid', 'polymorphism', 'dry', 'yagni',] 
+# result = list(filter(lambda x: len(x) > 7, list_))
+# print(result)
+# '''filter'''
+''''filter'''
+# list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] 
+# list2 = list(filter(lambda x: x % 2 == 0, list_))
+# list3 = list(filter(lambda x: x % 2 == 1, list_))
+# result = f'even: {len(list2)}, odd: {len(list3)}'
+# print(result)
+'''---'''
+# from random import choices
+# from itertools import repeat
+# from string import ascii_letters, digits
+
+
+# inp = int(input('--> '))
+# result = {
+#     f(choices(ascii_letters, k=10), choices(digits, k=6))
+#     for f in repeat(lambda x, y: ''.join(set(x+y)), inp)
+# }
+# print(result)
+
+# from statistics import mean
+
+'''---'''
+# list2 = [i for i in list1 if type(i) == type(1) or type(i) == type(1.0)]
+# list2 = [sqrt(i) for i in list2 if i > 0]
+
+# num_list = [213, 5646, 43, 452]
+
+# for i in num_list:
+#     if len(str(i)) % 2 == 1:
+#         print(f'число {i} - цифра по середине: {int(str(i)[len(str(i))//2])}')
+#     else:
+#         print(f'''число {i}:
+#          цифры по середине: {int(str(i)[len(str(i))//2-1])} и {int(str(i)[len(str(i))//2])}''')
+
+'''---'''
+# students_ = {'Akmaral': 100,
+#              'Yntymak': 43,
+#              'Bilal': 86,
+#              'Kutman': 65,
+#              'Bayel': 54,
+#              'Atay': 37,
+#              'Yiman': 21,
+#              'Eliza': 89,}
+# dict_del = {k: v for k, v in students_.items() if v < 60}
+# for k, v in dict_del.items():
+#     print(f'Уважаемый студент {k}, вы набрали {v} баллов, что значит, вы не сможете больше продолжать обучение в нашем ВУЗе')
+'''---'''
+# import functools
+# list_num_ = ['H','a','h','A','X','o']
+# print(list_num_)
+# string_ = functools.reduce(lambda x, y: x+y, list_num_)
+# print(string_)

@@ -8,11 +8,8 @@
 
 # list_ = [2, 'dsa', True, False, [1, 2], None, {'a: 12'}, {1, 2}, ('a', 'b', 'c')]
 # print(list_)
-from typing import Tuple
-
-
-list1 = []
-list2 = []
+# list1 = []
+# list2 = []
 
 # list1.append(element)
 
@@ -52,13 +49,13 @@ list2 = []
 # for элемент in итерируемый_объект:
             # Тело цикла
 
-types_list = [int, str, list, bool, None, set, dict, tuple]
-iter_objs = []
-non_iter_objs = []
-for obj in types_list:
-    if '__iter__' in dir(obj):
-        iter_objs.append(obj)
-    else:
-        non_iter_objs.append(obj)
-print(iter_objs)
-print(non_iter_objs)
+# types_list = [int, str, list, bool, None, set, dict, tuple]
+# iter_objs = []
+# non_iter_objs = []
+# for obj in types_list:
+#     if '__iter__' in dir(obj):
+#         iter_objs.append(obj)
+#     else:
+#         non_iter_objs.append(obj)
+# print(iter_objs)
+# print(non_iter_objs)

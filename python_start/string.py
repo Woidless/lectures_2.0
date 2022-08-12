@@ -36,6 +36,7 @@
 # # -6-5-4-3-2-1
 # print(str7[-12])
 # # print(str7[start:stop:step])
+
 # print(str7.find('ood')) # поиск индекса подстроки в строке
 # print(str7.index('mor')) # поиск индекса подстроки в строке
 # print('*'.join(['ola','kepasso'])) -  соединяет переданный список строк по указанной строке
@@ -51,6 +52,7 @@
 # print(str8)
 # ''' Методы проверки '''
 # string = 'My test string 123'
+
 # print(string.isdigit())
 # print(string.isalpha())
 # print(string.isalnum())
