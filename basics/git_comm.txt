@@ -7,13 +7,13 @@ git config --global user.name "name"
 
 git config --list - проверка настроек
 
-ssh-keygen - сщздать ssh ключ
+ssh-keygen - создать ssh ключ
 
 cat ~/.ssh/id/rsa.pub - получение ssh ключа
 
 создаем репозитори на github
 
-переходим в папкумс проектом
+переходим в папку с проектом
 git init - превращает текующие деректории в git репозиторий
 
 git remote add название_связи(обычно - origin)ссылку_ на удаленный_репозиторий(SSH: git@github:)

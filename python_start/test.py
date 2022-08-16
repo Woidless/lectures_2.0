@@ -397,3 +397,131 @@
 # print(list_num_)
 # string_ = functools.reduce(lambda x, y: x+y, list_num_)
 # print(string_)
+'''random'''
+# import random
+# print(random.choice())
+'''def'''
+# Функция высшего порядка - это функция, которая в качестве аргумента принимает любую функцию.
+# Декоратор - функция, котoрая позволяет без изменения кода обернуть другyю функцию для того, чтобы 
+# расширить функционал обернутой функции.
+
+# def decorator(func):
+#     print(func)
+#     return func()
+# def hello():
+#     print('Ya hello :)')
+#     return 'Hello'
+# def john():
+#     print('Ya john')
+#     return 'John'
+# print(hello())
+# print()
+# print(decorator(hello))
+# print()
+# print(decorator(john))
+
+# def benchmark(func):
+#     import time
+#     start = time.time()
+#     func()
+#     finish = time.time()
+#     print(f'Время выполнения функции {func.__name__}, заняло {round(finish-start, 2)}')
+
+# def loop():
+#     i = 0
+#     range_namber = 200000
+#     while i <= range_namber:
+#         print(i)
+#         i += 1
+
+# benchmark(loop)
+
+# Pythonic way -> @benchmark
+# Синтаксический сахар - это красота кода
+'''Декоратор'''
+# def benchmark(func):
+#     def wrapper():        
+#         import time
+#         start = time.time()
+#         func()
+#         finish = time.time()
+#         print(f'Время выполнения функции {func.__name__}, заняло {round(finish-start, 2)}')
+#     return wrapper
+
+# @benchmark
+# def loop():
+#     i = 0
+#     range_namber = 200000
+#     while i <= range_namber:
+#         # print(i)
+#         i += 1
+
+# @benchmark
+# def add():
+#     range_num = 200000
+#     ls = []
+#     for i in range(range_num):
+#         ls.append(i)
+#     # print(ls)
+
+
+# add()
+# loop()
+''''''
+# def strong(func):
+#     def wrapper(*args, ** kwargs):
+#         return '<str> ' + str(func()) + ' </strong>'
+#     return wrapper
+
+# def div(func):
+#     def wrapper(*args, **kwargs):
+#         return '<div> ' + str(func()) + ' </div>'
+#     return wrapper
+
+# @strong
+# @div
+# @strong
+# @div
+# def get():
+#     return 'Jhon Son'
+
+# print(get())
+''''''
+# sogl = 'бвгджзйклмнпрстфхцчшщъь'
+# gl = 'ауоыиэяюёе'
+# def sim(str_):    
+#     kol_s = 0
+#     kol_g = 0
+#     kol_o = 0
+#     for i in list(str_.lower()):
+#         if i in sogl:
+#             kol_s += 1
+#         elif i in gl:
+#             kol_g += 1
+#         else:
+#             kol_o += 1
+    
+#     return f'Количество знаков: {len(str_)}\nКоличество согл: {kol_s}\nКоличество гл: {kol_g}\nКоличество других символов: {kol_o}'
+
+# print(sim('Мой дорогой дневник, мне не описать ту боль и унижение'))
+
+# azb_sogl = 'бвгджзйклмнпрстфхцчшщ'
+# azb_gl = 'ауоыиэяюёе'
+
+# def count_symbols(string):
+#     sogl = 0
+#     gl = 0
+#     dr = 0
+
+#     print(list(string.lower()))
+#     for i in list(string.lower()):
+#         if i in azb_gl:
+#             gl +=1
+#         elif i in azb_sogl:
+#             sogl += 1
+#         else:
+#             dr += 1
+
+#     print(f'Количество гласных: {gl}, согласных {sogl}, остальных символов: {dr}')
+    
+# print(count_symbols('Мурат супер!'))
