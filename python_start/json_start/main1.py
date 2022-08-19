@@ -75,12 +75,60 @@ loads - Метод который считывает ТЕКСТ в формат�
 # print(py_dict)
 # print(type(py_dict))
 '''---'''
-import json
+# import json
 
-with open('downAPI.json') as my_file:
-    data = my_file.read()
-    print(data)
-    print(type(data))
-    user = json.loads(data)
-    print(user)
-    print(type(user))
+# with open('downAPI.json') as my_file:
+#     data = my_file.read()
+#     print(data)
+#     print(type(data))
+#     user = json.loads(data)
+#     print(user)
+#     print(type(user))
+'''---'''
+# import json
+
+# dict_ = {
+#         'name': 'Jhon',
+#         'last_name': 'Snow',
+#         'status': True,
+#         'wife': False,
+#         'childrn': None
+# }
+
+# str1 = json.dumps(dict_)
+# print(str1)
+# print(type(str1))
+
+# with open('new_file.json', 'w') as my_file:
+#     json.dump(dict_, my_file)
+
+# ЦЕНЗУРА
+
+
+def censor(file):
+        with open('name_file') as open_file, open(file) as censor_file:
+                pattern = open_file.read().split()
+                print(pattern)
+                
+                text_ = censor_file.read()
+                print(text_)
+                
+                text_lower = text_.lower()
+                for word in pattern:
+                        text_lower = text_lower.replace(word, '*' * len(word))
+                print(text_lower)
+                # result = ''
+                # i == 0
+                # print(text_lower)
+                # for x in text_lower:
+                #         if x == '*':
+                #                 result += x
+                #         else:
+                #                 result += text_[i]
+                #         i += 1
+                # print(result)
+                print(list(zip(text_lower, text_)))
+                result = ''.join([x, y][x != '*'] for x, y in zip(text_lower, text_))
+                print(result)
+
+censor('name_.txt')
