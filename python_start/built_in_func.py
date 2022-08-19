@@ -73,4 +73,13 @@
 # res = list(zip(ls1, ls2, ls3, ls4))
 
 # print(res)
-''''''
+
+'''all'''
+# list_ = [12, 3, 1, 23, 1, 2, 233]
+# result = all(i > 3 for i in list_)
+# print(result)
+
+'''any'''
+# list_ = [5, 8, 4, 6, 7]
+# result = any(i < 0 for i in list_)
+# print(result)

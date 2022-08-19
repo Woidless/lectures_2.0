@@ -69,3 +69,12 @@
 #     print(list_)
 # except:
 #     raise ValueError('Данный элемент не является числом!')
+
+# list_print = [f'{4} x {i} = {4*i}' for i in range(1, 11)]
+# print(list_print)
+'''---'''
+# from functools import reduce
+
+# res = reduce(lambda pro, y: pro*y,[i for i in range(1, 10)])
+# print(res)
+'''---'''

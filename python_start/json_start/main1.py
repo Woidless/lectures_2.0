@@ -1,4 +1,8 @@
 '''JSON'''
+# JS obj Notation - json
+# Единый формат хранения и передачи данных 
+
+
 '''
 Задание 1
 Вам даны два файла task1.json и task1.py.
@@ -42,3 +46,41 @@
 '''
 
 '''
+
+# classwork
+
+# js obj == {}, PY dict == {}, JSON == {}
+
+# Процуссы Сериализации и Десериализации данных
+
+# Сериализация (запись данных в JSON) - это перевод PY dict в JSON формат
+'''
+dump - Метод записывает объект PY в файл в формате JSON
+dumps - Метод записывает объект PY в строку в формате JSON
+'''
+
+# Десериализация(Чтение данных из JSON) - процесс перевода из JSON в формат PY dict
+'''
+load - Метод который считывает ФАЙЛ в формате JSON и перводит его в объекты py
+loads - Метод который считывает ТЕКСТ в формате JSON и переводит в объекты py
+'''
+# Процесс десериализации
+# import  json
+# from urllib.request import urlopen
+
+# data = urlopen('https://randomuser.me/api/')
+# print(type(data))
+# print(data)
+# py_dict = json.load(data)
+# print(py_dict)
+# print(type(py_dict))
+'''---'''
+import json
+
+with open('downAPI.json') as my_file:
+    data = my_file.read()
+    print(data)
+    print(type(data))
+    user = json.loads(data)
+    print(user)
+    print(type(user))
