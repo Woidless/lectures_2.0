@@ -298,7 +298,6 @@ Your password should have some symbols
 #     def __str__(self):
 #         return '*' * len(self.password)
 
-
 # password1 = Password('sdfdf32234##')
 # print(password1.validate())
 # print(password1)
@@ -413,26 +412,29 @@ get_mul_table - возвращает таблицу умножения для ч
 У класса должен быть метод list_of_tasks, который возвращает вам список отсортированных задач по приоритету:
 [(1, 'сделать домашку'), (2, 'выгулять собаку'), (3, 'сходить в кино')]
 '''
-class ToDo:
-    instances = {}
-    def __init__(self, gaol):
-        self.gaol = gaol
+# class ToDo:
+#     instances = {}
+#     def __init__(self, gaol):
+#         self.gaol = gaol
 
-    def give_priority(self, priority):
-        ToDo.instances[priority] = self.gaol
+#     def give_priority(self, priority):
+#         ToDo.instances[priority] = self.gaol
         
-    def list_of_tasks(self):
-        self.instances = dict(sorted(ToDo.instances.items(), key=lambda item: item[1],))
-        return list(ToDo.instances.items())
+#     def list_of_tasks(self):
+#         self.instances = dict(sorted(ToDo.instances.items(), key=lambda item: item[1],))
+#         return list(ToDo.instances.items())
 
-obj1 = ToDo("Do a homework") 
-obj1.give_priority(1)
-obj2 = ToDo("housework")
-obj2.give_priority(2)
-obj3 = ToDo("task 3")
-obj3.give_priority(3)
-print(obj3.list_of_tasks())
-print(obj3.instances) 
+# obj1 = ToDo("Do a homework") 
+# obj1.give_priority(1)
+# obj2 = ToDo("housework")
+# obj2.give_priority(2)
+# obj3 = ToDo("task 3")
+# obj3.give_priority(3)
+# print(obj3.list_of_tasks())
+# print(obj3.instances) 
+'''
+--------------------
+'''
 # class ToDo:
 #     instances = {}
 #     def __init__(self, *args):

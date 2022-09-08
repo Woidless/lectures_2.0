@@ -14,7 +14,8 @@
 # list1.append(element)
 
 # list1.insert(index, element)
-
+# list_.insert(3, 6)
+# print(list_)
 # list1.extend(list2) добавляет все элементы list2 в list1
 
 

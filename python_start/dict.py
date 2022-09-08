@@ -29,7 +29,11 @@
 
 # dict4 = dict.fromkeys(['a', '5']) # ([], None)
 
-# dict5 = dict([('name', 'Moon'), ('last_name', 'light'), ('age', 23), ('gender', 'pokemon'), ('birthday', '23.03.2003')])
+# dict5 = dict([('name', 'Moon'), 
+#               ('last_name', 'light'), 
+#               ('age', 23), 
+#               ('gender', 'pokemon'), 
+#               ('birthday', '23.03.2003')])
 
 
 
@@ -122,15 +126,15 @@
 
 # items(), keys(), values()
 
-list_ = ['x--', '--x', '++x', 'x++']
+# list_ = ['x--', '--x', '++x', 'x++']
 
-x = 0
+# x = 0
 
-for i in list_:
-    if '--' in i:
-        x -= 1
-        print(x)
-    elif '++' in i:
-        x += 1
-        print(x)
+# for i in list_:
+#     if '--' in i:
+#         x -= 1
+#         print(x)
+#     elif '++' in i:
+#         x += 1
+#         print(x)
         
