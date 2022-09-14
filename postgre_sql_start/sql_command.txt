@@ -1,0 +1,35 @@
+sudo -u postgers psql  -- 
+
+sudo -i - u postgers -- 
+
+CREATE DATABASE name_of_database
+CREATE DATABASE name_of_database WITH OWNER user_name
+CREATE USER user_name WITH PASSWORD 'name_of_password'
+ALTER USER user_name WITH superuser
+GRANT ALL PRIVILEGES ON DATABASE name_of_database to user_name
+
+DROP DATABASE name_of_database
+DROP USER user_name
+
+CREATE TABLE name_of_table(
+    'name_of_pillor' 'data_type' 'Ограничения(не обязательно)',
+    'name_of_pillor' 'data_type' 'Ограничения(не обязательно)',
+    'name_of_pillor' 'data_type' 'Ограничения(не обязательно)');
+
+INSERT INTO name_of_table (*name_of_pillor) VALUES (datas)
+INSERT INTO name_of_table (*name_of_pillor) VALUES (datas), (datas), (datas)
+
+SELECT name_of_pillor FROM name_of_table
+SELECT * FROM name_of_table
+SELECT * FROM name_of_table WHERE name_of_pillor (>, <, =, >=, <=, !=, <>)
+#10 частто встречающихся слов
+SELECT plaintext FROM wordform ORDER BY wordformid FETCH FIRST 10 ROW ONLY;
+SELECT plaintext FROM wordform ORDER BY occurences DESC LIMIT(10);
+
+\l - list
+
+Вы можете установить пароль для существующего пользователя. С этой задачей справится команда \password:
+postgres=#\password author
+
+Чтобы задать пароль при создании пользователя, можно использовать следующую команду:
+postgres=#create user author with login password 'qwerty';

@@ -160,30 +160,30 @@ write-read
 ####################################
 write - only
 '''
-import hashlib
-import os
+# import hashlib
+# import os
 
-class User:
-    def __init__(self, name, password):
-        self.username = name
-        self.password = password
+# class User:
+#     def __init__(self, name, password):
+#         self.username = name
+#         self.password = password
 
-    @property
-    def password(self):
-        raise Exception('Password write only')
+#     @property
+#     def password(self):
+#         raise Exception('Password write only')
 
-    @password.setter
-    def password(self, password):
-        if not isinstance(password, str):
-            raise Exception('Invalid value for password')
-        salt = os.urandom(32)
-        self._hashed_password = hashlib.pbkdf2_hmac('sha256',
-                                                    password.encode('utf-8'),
-                                                    salt,
-                                                    100_000)
+#     @password.setter
+#     def password(self, password):
+#         if not isinstance(password, str):
+#             raise Exception('Invalid value for password')
+#         salt = os.urandom(32)
+#         self._hashed_password = hashlib.pbkdf2_hmac('sha256',
+#                                                     password.encode('utf-8'),
+#                                                     salt,
+#                                                     100_000)
 
-jhon = User('Bakr', '1234')
-print(jhon.username)
-# print(jhon.password)
-jhon.password = '567'
-print(jhon._hashed_password)
+# jhon = User('Bakr', '1234')
+# print(jhon.username)
+# # print(jhon.password)
+# jhon.password = '567'
+# print(jhon._hashed_password)
